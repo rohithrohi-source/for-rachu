@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Rachu ❤️</title>
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  overflow:hidden;
+}
+
+/* animated gradient background */
+body::before{
+  content:"";
+  position:fixed;
+  width:200%;
+  height:200%;
+  background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 40%),
+             radial-gradient(circle at 70% 70%, rgba(255,0,100,0.2), transparent 40%);
+  animation:moveBg 10s linear infinite;
+  z-index:0;
+}
+
+@keyframes moveBg{
+  0%{transform:translate(0,0);} 
+  50%{transform:translate(-10%, -10%);} 
+  100%{transform:translate(0,0);} 
+}
+
+.section{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1;
+  position:relative;
+}
+
+.card{
+  backdrop-filter:blur(15px);
+  background:rgba(255,255,255,0.8);
+  padding:30px;
+  border-radius:25px;
+  max-width:500px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,0.3);
+  animation:fadeIn 1.5s ease;
+}
+
+h1{
+  color:#e63946;
+  animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0 0 10px #ff6b81;} 
+  to{text-shadow:0 0 30px #ff1744;} 
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:scale(0.9);} 
+  to{opacity:1;transform:scale(1);} 
+}
+
+button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(45deg,#ff4d6d,#ff758f);
+  color:white;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  box-shadow:0 10px 25px rgba(255,0,80,0.5);
+}
+
+/* falling hearts */
+.heart{
+  position:absolute;
+  top:-10vh;
+  animation:fall linear;
+  color:#ff1744;
+}
+
+@keyframes fall{
+  from{transform:translateY(-10vh) rotate(0deg);} 
+  to{transform:translateY(110vh) rotate(360deg);} 
+}
+
+/* glowing particles */
+.particle{
+  position:absolute;
+  width:5px;
+  height:5px;
+  background:white;
+  border-radius:50%;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh);} 
+  to{transform:translateY(-10vh);} 
+}
+
+</style>
+</head>
+<body>
+
+<div class="section">
+  <div class="card">
+    <h1>For Rachu...my wifee ❤️</h1>
+    <p>Rachu… my Babee ❤️<br><br>
+    Before you open this… I just want you to know something.<br><br>
+    This isn’t just a normal sorry.<br><br>
+    I actually sat and thought about everything… about us… about what I did.<br><br>
+    And I don’t want to lose what we have… not because of something I could’ve done better.</p>
+    <button onclick="nextPage(2)">Open</button>
+  </div>
+</div>
+
+<div id="page2" class="section" style="display:none;">
+  <div class="card">
+    <h1>Page 1</h1>
+    <p>I know I messed up... and I didn’t realize it at that moment.<br><br>
+    You asked for something small, something simple… and I delayed it.
+    I thought doing it later was okay… but now I understand, it wasn’t about later.</p>
+    <button onclick="nextPage(3)">Next</button>
+  </div>
+</div>
+
+<div id="page3" class="section" style="display:none;">
+  <div class="card">
+    <h1>Page 2</h1>
+    <p>You asked for something small... but it meant something big to you.<br><br>
+    It wasn’t about the task itself… it was about feeling important in that moment.
+    And I failed to give you that feeling.</p>
+    <button onclick="nextPage(4)">Next</button>
+  </div>
+</div>
+
+<div id="page4" class="section" style="display:none;">
+  <div class="card">
+    <h1>Page 3</h1>
+    <p>And I failed to understand that... and that hurts me now.<br><br>
+    What hurts more is knowing that when I expect something from you,
+    sometimes I feel like you don’t do it either… but instead of understanding each other,
+    we both just end up feeling hurt.</p>
+    <button onclick="nextPage(5)">Next</button>
+  </div>
+</div>
+
+<div id="page5" class="section" style="display:none;">
+  <div class="card">
+    <h1>Page 4</h1>
+    <p>You are not just someone in my life... you are my peace.<br><br>
+    You are the person I think about first, the one I want to share everything with.
+    My day feels incomplete without you.</p>
+    <button onclick="nextPage(6)">Next</button>
+  </div>
+</div>
+
+<div id="page6" class="section" style="display:none;">
+  <div class="card">
+    <h1>Page 5</h1>
+    <p>Your smile, your voice, your care... everything matters to me.<br><br>
+    Even the smallest things you do stay in my mind.
+    That’s why it hurts me that I couldn’t do the same for you when it mattered.</p>
+    <button onclick="nextPage(7)">Next</button>
+  </div>
+</div>
+
+<div id="page7" class="section" style="display:none;">
+  <div class="card">
+    <h1>Final ❤️</h1>
+    <p>
+    Rachu... my Babee ❤️<br><br>
+    I’m really really sorry...<br><br>
+    Not just for what I did, but for how it made you feel.<br><br>
+    I don’t want you to feel ignored, unimportant, or taken for granted.<br><br>
+    I’ll take care of every small thing... because YOU are everything to me.<br><br>
+    I’ll try to understand you better, listen more, and be there when it actually matters not later.<br><br>
+    Because loving you means caring about the small things too.<br><br>
+    Please forgive me? 🥺
+    </p>
+  </div>
+</div>
+
+<div id="page5" class="section" style="display:none;">
+  <div class="card">
+    <h1>Final ❤️</h1>
+    <p>
+    I’m really sorry Babee ❤️<br><br>
+    I’ll do better… I promise.<br><br>
+    Please forgive me? 🥺
+    </p>
+  </div>
+</div>
+
+<audio id="music" src="https://www.bensound.com/bensound-music/bensound-romantic.mp3"></audio>
+
+<script>
+function nextPage(page){
+  document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+  document.getElementById('page'+page).style.display='flex';
+  if(page===5){document.getElementById('music').play();}
+}
+
+// heart rain
+setInterval(()=>{
+  let h=document.createElement('div');
+  h.className='heart';
+  h.innerHTML='❤️';
+  h.style.left=Math.random()*100+'vw';
+  h.style.fontSize=(15+Math.random()*25)+'px';
+  h.style.animationDuration=(3+Math.random()*3)+'s';
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),6000);
+},100);
+
+// particles
+setInterval(()=>{
+  let p=document.createElement('div');
+  p.className='particle';
+  p.style.left=Math.random()*100+'vw';
+  document.body.appendChild(p);
+  setTimeout(()=>p.remove(),6000);
+},300);
+</script>
+
+</body>
+</html>
